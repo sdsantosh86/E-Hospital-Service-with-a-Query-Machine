@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hospital Login</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="home_page.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="home_page.html">Home</a>
+					</li>
+					<li class="selected">
+						<a href="patient.html">Patient</a>
+					</li>
+					<li>
+						<a href="doctor.html">Doctor</a>
+					</li>
+					<li>
+						<a href="contact_us.jsp">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Patient</h1>
+				</div>
+			</div>
+			<div class="body">
+				<img src="images/cover4.jpg" alt="">
+			</div>
+			<div class="footer">
+				<div class="sidebar">
+					<h1>Be Part of Our Community</h1>
+                    <p><img src="images/comm.jpg" alt="" height="160" width="200"></p>
+					<p>Come.. Join Us</p>
+				</div>
+				<div class="article">
+					<h1>Patient's Login</h1>
+						<form name="patient" action="patient_login.jsp" method="post">
+							<p>
+                                                            <label>Username  <input class="textboxp" type="text" name="pname" required=""></label><br>
+                                                            <label>Password  <input class="textboxp" type="password" name="ppass" required=""></label><br>
+                                                            <input class="css_button" type="submit" value="Login" id="submit">
+						</p></form>
+					
+					<p>
+                                        <h1>OR</h1>
+                        <form action="patient_registration.html">
+                            <a href="patient_registration.html"><input class="css_button" type="submit" id="submit" value="Register"></a>
+                        </form>
+				</div>
+                            
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<div class="connect">
+					<a href="http://www.facebook.com" class="facebook">facebook</a>
+					<a href="http://www.twitter.com" class="twitter">twitter</a>
+					<a href="http://www.googleplus.com" class="googleplus">googleplus</a>
+					<a href="http://www.pinterest.com" class="pinterest">pinterest</a>
+				</div>
+				<p>&copy; 2017 CGPS Hospitals. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/registration.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/styleR.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <script src="js/form_validation.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page">
+    <div id="header">
+        <div>
+            <a href="home_page.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul id="navigation">
+                <li>
+                    <a href="management.html">Homepage </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="body">
+        <div class="header">
+            <div>
+                <h1>Doctor Registration</h1>
+            </div>
+        </div>
+        <div class="body">
+            <img src="images/cover1.jpg" alt="" height="249">
+        </div>
+
+        <div class="footer">
+            <div class="article">
+                <h1>Registration Form</h1>
+
+                <div class="container">
+                    <div  class="form">
+                        <form name="doctor_reg" action="doctor_reg.jsp" method="post" onsubmit="return dform_validation()">
+
+                            <p class="contact"><label for="doc_regno">Registration ID</label></p>
+                            <input class="birthday" maxlength="4" placeholder="####" id="doc_regno" name="doc_regno" required="" type="text"> <br>
+
+                            <fieldset>
+                                <p class="contact"><label for="first">Name</label></p>
+                                <label>Dr.</label>
+                                <input id="first" name="dname" placeholder="Name" required="" tabindex="1" type="text">
+                            </fieldset>
+
+                            <select class="select-style month" name="doc_spc">
+                                <option value="">Specialization&nbsp;&nbsp;&nbsp;</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Gynaecology">Gynaecology</option>
+                                <option value="Oncology">Oncology</option>
+                            </select><br><br>
+
+                            <select class="select-style month" name="gender">
+                                <option value="">Gender&nbsp;&nbsp;&nbsp;</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                </select><br><br>
+
+                            <p class="contact"><label for="phone">Mobile phone</label></p>
+                            <input id="phone" name="phone" placeholder="phone number" required="" maxlength="10" type="text"> <br>
+
+                            <p class="contact"><label for="username">Create a username</label></p>
+                            <input id="username" name="username" placeholder="username" required="" tabindex="3" type="text">
+
+                            <p class="contact"><label for="password">Create a password</label></p>
+                            <input type="password" id="password" name="password" required="" tabindex="4">
+                            <p class="contact"><label for="repassword">Confirm password</label></p>
+                            <input type="password" id="repassword" name="repassword" required="" tabindex="4">
+                            
+                            <p class="contact"><label>Timings</label></p>
+                            <input class="birthyear" maxlength="20" placeholder="ex: 10am to 11am" name="timings" required="" type="text"> <br>
+
+                            <br>
+                            <br>
+                            <input type="submit" class="buttom" tabindex="5" value="Register">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div class="connect">
+                <a href="http://www.facebook.com" class="facebook">facebook</a>
+                <a href="http://www.twitter.com" class="twitter">twitter</a>
+                <a href="http://www.googleplus.com" class="googleplus">googleplus</a>
+                <a href="http://www.pinterest.com" class="pinterest">pinterest</a>
+            </div>
+            <p>&copy; 2017 CGPS Hospitals. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

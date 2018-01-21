@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doctor/Management</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="home_page.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="home_page.html">Home</a>
+					</li>
+					<li>
+						<a href="patient.html">Patient</a>
+					</li>
+					<li class="selected">
+						<a href="doctor.html">Doctor</a>
+					</li>
+					<li>
+						<a href="contact_us.jsp">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Doctor</h1>
+				</div>
+			</div>
+			<div class="blog">
+				<div class="featured">
+					<ul>
+						<li>
+							<img src="images/doctors2.jpg" alt="" height="180" width="180">
+							<div>
+								<h1>Doctor's Login</h1>
+								<span>For Doctors only</span>
+									<div class="contact">
+										<form name="doctor" action="doctor_login.jsp" method="post">
+											<p>
+                                                                                            <label>Username  <input class="textbox" type="text" name="dname" required=""></label><br>
+                                                                                            <label>Password  <input class="textbox" type="password" name="dpass" required=""></label><br>
+                                                                                                <input class="css_button" type="submit" value="Login" id="submit1"></p>
+										</form>
+									</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/manage.png" alt="" height="180" width="180">
+							<div>
+								<h1>Management</h1>
+								<span>For Management only</span>
+								<div class="contact">
+					<form name="manage" action="admin_login.jsp" method="post">
+						<p>
+                                                    Username  <input class="textbox" type="text" name="mname" required=""><br>
+                                                    Password  <input class="textbox" type="password" name="mpass" required=""><br>
+                                                    <input class="css_button" type="submit" value="Login" id="submit2"></p>
+					</form>
+				</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar">
+					<h1>Recent News</h1>
+					<img src="images/img10.jpg" alt="">
+					<h2>DENTAL WING</h2>
+					<span>Shortly Opening</span>
+					<p>You can experience this new wing to our website shortly.</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<div class="connect">
+					<a href="http://www.facebook.com" class="facebook">facebook</a>
+					<a href="http://www.twitter.com" class="twitter">twitter</a>
+					<a href="http://www.googleplus.com" class="googleplus">googleplus</a>
+					<a href="http://www.pinterest.com" class="pinterest">pinterest</a>
+				</div>
+				<p>&copy; 2017 CGPS Hospitals. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
